@@ -218,11 +218,28 @@ nav .items {
 
 /*Learning container Start*/
 
+.learning.container {
+  display: block;
+  width: 100%;
+}
 
+.learning.container .heading {
+  justify-content: center;
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 
 .tile-images {
   display: flex;
-  flex-flow: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #EAEBEC;
+}
+
+.course {
+  width: 25%;
+}
 
 
 /*Thesis Section*/
