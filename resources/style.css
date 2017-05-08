@@ -2,6 +2,232 @@ ul {
   list-style-type: none;
 }
 
+/* div color border */
 div {
   border: 1px solid red;
+}
+
+body {
+  color: #4A4A4A;
+}
+
+/* Header Starts */
+
+header {
+  display: block;
+  width: 100%;
+  height: 4rem;
+}
+
+header .logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header .items {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+/* nav color border */
+nav {
+  border: 1px solid red;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  height: 4rem;
+  align-items: center;
+}
+
+nav a {
+  display: flex;
+  height: 100%;
+}
+
+nav .color {
+  background-color: #92E0E0;
+  width: 1rem;
+  align-items: stretch;
+  display: flex;
+  margin: 0;
+}
+
+
+header .mobile-nav {
+  display: none;
+}
+
+nav .full-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 0;
+}
+
+nav .items {
+  display: flex;
+
+}
+
+
+/*Header Ends*/
+
+/* Main Banner Starts*/
+
+.main-banner {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  background-color: #E1E1E1;
+}
+
+.banner.image{
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  display: flex;
+  overflow: hidden;
+}
+
+.banner.image img {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 30%;
+}
+
+.banner.quote {
+  display: flex;
+  padding-left: 2.5rem;
+}
+
+.banner.quote .quote {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 70%;
+  height: 70%;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.banner.quote span {
+  background-color: #4A4A4A;
+  padding-top: .8rem;
+  padding-bottom: .8rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  width: 80%;
+}
+
+.banner.quote h1 {
+  font-size: 3rem;
+  margin-left: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.banner.quote h3 {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  margin-left: 2.5rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+/* Information Section */
+
+.information.container {
+  display: flex;
+  width: 100%;
+}
+
+.information .banner.image {
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  padding-right: 1.5rem;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  width: 60%;
+  height: 100%;
+}
+
+.information .practicing {
+  display: flex;
+  width: 100%;
+}
+
+.information .side.column {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 30rem;
+}
+
+.information .title {
+  display: flex;
+  flex-direction: row;
+  width: 30rem;
+  height: 100%;
+  }
+
+.title img {
+  display: flex;
+  width: 12.5rem;
+  height: 12.5rem;
+  padding: 1rem;
+}
+
+.title.keynote {
+  background-color: #D8D8D8;
+  display: flex;
+}
+
+
+.title .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+
+}
+
+.info p {
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.info h3 {
+  margin-bottom: 0;
+}
+
+/*Pracice Container End*/
+
+/*Learning container Start*/
+
+
+
+.tile-images {
+  display: flex;
+  flex-flow: row;
+
+
+/*Thesis Section*/
+
+.thesis video {
+  display: flex;
+  width: 60%;
 }
