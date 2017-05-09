@@ -2,13 +2,18 @@ ul {
   list-style-type: none;
 }
 
-/* div color border */
+/* div color border*/
 div {
   border: 1px solid red;
 }
 
 body {
   color: #4A4A4A;
+  width: auto;
+}
+
+p {
+  font-weight: lighter;
 }
 
 /* Header Starts */
@@ -29,6 +34,14 @@ header .items {
   display: flex;
   width: 100%;
   justify-content: space-between;
+}
+
+.logo span {
+  color:  #A8A8A8;
+}
+
+.logo strong {
+  color: #4E4E4E;
 }
 
 
@@ -173,6 +186,7 @@ nav .items {
   flex-direction: column;
   height: 100%;
   width: 30rem;
+  border-left: 1px solid #D8D8D;
 }
 
 .information .title {
@@ -200,7 +214,7 @@ nav .items {
   flex-direction: column;
   justify-content: center;
   width: 100%;
-
+  padding-left: 1rem;
 }
 
 .info p {
@@ -228,6 +242,7 @@ nav .items {
   display: flex;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  background-color: #EAEBEC;
 }
 
 .tile-images {
@@ -235,16 +250,109 @@ nav .items {
   flex-wrap: wrap;
   justify-content: center;
   background-color: #EAEBEC;
+  padding-bottom: 2rem;
 }
 
 .course {
   width: 25%;
+  background-color: #fff;
+  margin-right: 2rem;
+  margin-bottom: 1.5rem;
 }
 
+.course img {
+  display: flex;
+  width: 100%;
+}
+
+.course h2 {
+  padding-left: 1rem;
+  color: #484848;
+}
+
+.course span
+ {
+  font-weight: lighter;
+  padding-left: 1rem;
+  color: #A8A8A8;
+}
+
+.course p {
+  font-weight: lighter;
+  padding-left: 1rem;
+  width: 70%;
+  color: #A8A8A8;
+}
 
 /*Thesis Section*/
 
-.thesis video {
-  display: flex;
-  width: 60%;
+.thesis.container {
+  display: block;
+  width: 100%;
 }
+
+.thesis.container .heading {
+  justify-content: center;
+  display: flex;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.thesis.info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+
+.video.info {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding-bottom: 2rem;
+  padding-left: 1.5rem;
+  margin-right: 1rem;
+  align-items: flex-start;
+}
+
+video {
+  width: 100%;
+}
+
+.video.info h2 {
+  margin-top: 1.4rem;
+}
+
+.thesis.container p {
+  color: #A8A8A8;
+}
+
+.thesis .side-banner {
+  width: 26.4375rem;
+}
+
+.information .side-banner {
+  width: 100%;
+}
+
+.thesis .banner.info {
+  display: flex;
+  flex-direction: row;
+  width: 30rem;
+  height: 12.5rem;
+}
+
+.banner.info.keynote {
+  background-color: #EAEBEC;
+}
+
+.banner.info .info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.banner.info img {
+  width: 12.5rem;
+  padding: 1rem;
