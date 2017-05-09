@@ -2,7 +2,11 @@ ul {
   list-style-type: none;
 }
 
-
+.heading h1 {
+  font-weight: bolder;
+  color: #4E4E4E;
+  font-size: 2rem;
+}
 
 /* div color border
 div {
@@ -355,6 +359,10 @@ video {
   width: 26.4375rem;
 }
 
+.thesis img {
+  margin: 1rem;
+}
+
 .information .side-banner {
   width: 100%;
 }
@@ -368,6 +376,7 @@ video {
 
 .banner.info.keynote {
   background-color: #EAEBEC;
+  height: 10.5rem;
 }
 
 .banner.info .info {
