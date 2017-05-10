@@ -55,6 +55,18 @@ header .items {
   color: #4E4E4E;
 }
 
+@media only screen and (max-width: 470px) {
+  header .logo {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  header {
+
+    height: 4rem;
+  }
+}
 
 /* nav color border
 nav {
@@ -104,10 +116,43 @@ nav .items {
   display: flex;
 }
 
+@media only screen and (max-width: 470px) {
+  nav .full-nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  nav .mobile-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+.mobile-nav li {
+    justify-content: space-around;
+    display: flex;
+  }
+
+}
 
 /*Header Ends*/
 
 /* Main Banner Starts*/
+
+@media only screen and (max-width: 470px) {
+.main-banner {
+    display: block;
+  }
+
+.banner.image {
+  display: none;
+}
+
+.banner.quote.quote {
+  display: none;
+}
+}
 
 .main-banner {
   display: flex;
