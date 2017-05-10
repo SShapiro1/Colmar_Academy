@@ -34,6 +34,8 @@ header .logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  padding-left: 1.5rem;
+  font-size: 1.2rem;
 }
 
 header .items {
@@ -64,12 +66,14 @@ nav {
   justify-content: center;
   height: 4rem;
   align-items: center;
+
 }
 
 nav a {
   display: flex;
   height: 100%;
   align-items: center;
+  font-size: 1.2rem;
 
 }
 
@@ -139,13 +143,13 @@ nav .items {
   flex-direction: column;
   width: 100%;
   height: 70%;
-  padding-left: 2.5rem;
-  /*padding-right: 2.5rem;*/
+  /*padding-left: 2.5rem;*/
+  padding-right: 2.5rem;
   align-items: center;
   margin-top: 3rem;
 }
 
-.banner.quote span {
+.banner.quote a {
   background-color: #4A4A4A;
   padding-top: .8rem;
   padding-bottom: .8rem;
@@ -155,21 +159,25 @@ nav .items {
   font-size: 1.2rem;
   width: 80%;
   margin-top: 2rem;
+  font-weight: 500;
+  margin-left: 2.5rem;
 }
 
 .banner.quote h1 {
   font-size: 3rem;
-  margin-left: 2.5rem;
-  margin-bottom: 1rem;
+  margin-left: 4rem;
+  color: #4A4A4A;
+  font-weight: 800;
 }
 
 .banner.quote h3 {
   width: 90%;
   display: flex;
   justify-content: center;
-  margin-left: 2.5rem;
+  margin-left: 5rem;
   font-size: 1.5rem;
-  margin-top: 1rem;
+  color: #4A4A4A;
+  font-weight: 600;
 }
 
 /* Information Section */
