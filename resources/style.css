@@ -18,6 +18,12 @@ body {
   max-width: 100%;
   }
 
+@media only screen and (max-width: 470px) {
+  body {
+    max-width: 100%;
+  }
+}
+
 p {
   font-weight: lighter;
 }
@@ -61,12 +67,8 @@ header .items {
   }
 }
 
-@media only screen and (max-width: 470px) {
-  header {
 
-    height: 4rem;
-  }
-}
+
 
 /* nav color border
 nav {
@@ -117,16 +119,24 @@ nav .items {
 }
 
 @media only screen and (max-width: 470px) {
+  header {
+    display: flex;
+    max-width: 100%;
+  }
+
+  header .mobile-nav img {
+    padding: 2rem;
+  }
+
   nav .full-nav {
     display: none;
   }
-}
 
-@media screen and (max-width: 470px) {
   nav .mobile-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
   }
 
 .mobile-nav li {
@@ -142,15 +152,22 @@ nav .items {
 
 @media only screen and (max-width: 470px) {
 .main-banner {
-    display: block;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
   }
 
-.banner.image {
+.container .banner.image img {
   display: none;
 }
 
-.banner.quote.quote {
-  display: none;
+.container {
+    width: 100%;
+  }
+
+.quote {
+  display: flex;
+  width: 100%;
 }
 }
 
@@ -161,6 +178,7 @@ nav .items {
   flex-direction: row;
   background-color: #E1E1E1;
 }
+
 
 .banner.image{
   padding-top: 2rem;
@@ -242,6 +260,37 @@ nav .items {
   padding-left: 1.5rem;
   width: 60%;
   height: 100%;
+}
+
+@media only screen and (max-width: 470px) {
+  .information .banner.image {
+    display: none;
+  }
+
+  .side.column {
+    width: 100%;
+  }
+
+  .side.colum .title a {
+    width: 100%;
+  }
+
+  .side.column .title p {
+    width: 100%;
+  }
+
+  .side.column .title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .side.column .title.keynote {
+    width: 100%;
+  }
+
+  .side.column .title {
+    width: 100%;
+  }
 }
 
 .information .practicing {
@@ -356,6 +405,47 @@ nav .items {
   background-color: #EAEBEC;
 }
 
+.mobile.learning {
+  display: none;
+}
+
+@media only screen and (max-width: 470px) {
+  .learning.mobile.learning {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile.learning a {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    margin-bottom: .5rem;
+    background-color: #A8A8A8;
+    display: flex;
+    font-weight: bold;
+    font-size: 1.3rem;
+  }
+
+  .mobile.learning a:visited {
+    background-color: gray;
+  }
+
+  .mobile.learning a {
+    transition: background-color .5s ease-out;
+  }
+
+  .mobile.learning a:hover {
+    background-color: teal;
+  }
+}
+
+
+@media only screen and (max-width: 470px){
+  .learning .tile-images {
+    display: none;
+  }
+}
+
 .tile-images {
   display: flex;
   flex-wrap: wrap;
@@ -458,6 +548,30 @@ video {
   margin-top: .4rem;
 }
 
+@media only screen and (max-width: 470px) {
+  .information.side-banner {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .video.info h2 {
+    display: none;
+  }
+
+  .video.info p {
+    display: none;
+}
+
+  .video.info {
+    width: 100%;
+  }
+
+  video {
+    width: 100%;
+  }
+}
+
 .thesis img {
   margin: 1rem;
 }
@@ -535,6 +649,18 @@ footer {
 
 footer a {
   padding: .5rem;
+}
+
+@media only screen and (max-width: 470px) {
+  footer {
+    display: flex;
+    font-size: .9rem;
+    justify-content: center;
+  }
+
+  footer a {
+    display: none;
+  }
 }
 
 /* Footer Ends YIPPEE!!*/
