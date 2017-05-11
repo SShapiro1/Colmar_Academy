@@ -65,6 +65,10 @@ header .items {
   header .logo {
     display: none;
   }
+
+  header .items {
+    justify-content: center;
+  }
 }
 
 
@@ -151,24 +155,29 @@ nav .items {
 /* Main Banner Starts*/
 
 @media only screen and (max-width: 470px) {
-.main-banner {
+  .main-banner {
     display: flex;
     width: 100%;
     flex-direction: column;
   }
 
-.container .banner.image img {
+  .container .banner.image img {
   display: none;
 }
 
-.container {
+  .container {
     width: 100%;
   }
 
-.quote {
+  .quote {
   display: flex;
   width: 100%;
 }
+
+  .container .banner-image {
+    width: 100%;
+  }
+
 }
 
 .main-banner {
@@ -272,16 +281,14 @@ nav .items {
   }
 
   .information .mobile.side-column {
-    width: 100%;
+    width: 27rem;
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem;
+    margin-right: 1rem;
   }
 
   .mobile.side-column .title a {
     width: 100%;
-    padding-bottom: 1rem;
-    padding-left: 1rem;
   }
 
   .mobile.side-column .title p {
@@ -299,47 +306,39 @@ nav .items {
     flex-direction: column;
   }
 
-  /*.mobile.side-column .title.keynote {
-    width: 100%;
-  }*/
+
 
   .mobile.side-column .title {
-    width: 100%;
+    width: 27rem;
   }
 
   .mobile.side-column .info {
-    max-width: 100%;
+    width: 27rem;
   }
 
   .mobile.side-column .title img {
     width: 100%;
-    height: 15rem;
-    padding-right: 0;
-    overflow: hidden;
+    padding: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
-  .mobile.side-column .title.keynote img {
+  .mobile.side-column .mobile-keynote img {
+    display: flex;
     width: 100%;
-    height: 50%;
-    padding-right: 0;
-    overflow: hidden;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .mobile.side-column .mobile-keynote {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    max-width: 100%;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
 }
 
   .mobile.side-column .title.keynote {
     background-color: white;
-    display: flex;
-    width: 100%;
+    width: 27rem;
   }
 
 .mobile.side-column .mobile-keynote h3 {
@@ -347,20 +346,27 @@ nav .items {
   font-weight: 600;
   color: #4A4A4A;
   margin-bottom: .5rem;
-  max-width: 100%;
-  overflow: hidden;
+  width: 27rem;
   padding-left: 1rem;
   }
 
 .mobile.side-column .mobile-keynote p {
-  padding-top: .5rem;
-  padding-bottom: .5rem;
-  margin-bottom: 0;
-  margin-top: 0;
   font-size: 1.5;
   color: #A8A8A8;
+  width: 27rem;
+  padding-left: 1rem;
+}
+
+.mobile.side-column .mobile-keynote a {
+  padding-left: 1rem;
+}
+
+.mobile.side-column .mobile-keynote.info {
   max-width: 100%;
-  overflow: hidden;
+  display: flex;
+  padding-top: 1rem;
+  margin-bottom: 8rem;
+  padding-left: 1rem;
 }
 
   .side.column .title.keynote .info.keynote{
@@ -483,6 +489,13 @@ nav .items {
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: #EAEBEC;
+}
+
+@media only screen and (max-width: 470px) {
+  .learning.container .heading {
+    margin-top: 8rem;
+    border-top: 1px solid green;
+  }
 }
 
 .mobile.learning {
