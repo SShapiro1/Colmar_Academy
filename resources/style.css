@@ -59,6 +59,7 @@ header .items {
 
 .logo strong {
   color: #4E4E4E;
+  text-shadow: .2rem .2rem .2rem #A3A3A3;
 }
 
 @media only screen and (max-width: 470px) {
@@ -152,31 +153,61 @@ nav .items {
 
 /*Header Ends*/
 
+/* Mobile Box Container Starts*/
+
+.mobile.box.container {
+  display: none;
+}
+
+@media only screen and (max-width: 470px) {
+  .container .mobile.color.box {
+    background-color: #3Feee6;
+    width: 100%;
+    height: 11.25rem;
+    display: flex;
+    }
+
+  .container .main-banner {
+    display: flex;
+    flex-direction: column;
+  }
+
+}
+
+/*Mobile Box Container Ends*/
+
 /* Main Banner Starts*/
 
 @media only screen and (max-width: 470px) {
   .main-banner {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
+    display: none;
   }
 
   .container .banner.image img {
   display: none;
 }
 
+  .container .banner.image {
+    display: flex;
+  }
+
   .container {
     width: 100%;
   }
 
-  .quote {
+  .container .quote {
   display: flex;
   width: 100%;
 }
 
   .container .banner-image {
     width: 100%;
+    height: 11.25rem;
   }
+
+.banner.quote a {
+  height: 4rem;
+}
 
 }
 
@@ -185,7 +216,7 @@ nav .items {
   align-items: center;
   width: 100%;
   flex-direction: row;
-  background-color: #E1E1E1;
+  background-color: #97CAEF;
 }
 
 
@@ -222,10 +253,10 @@ nav .items {
 }
 
 .banner.quote a {
-  background-color: #4A4A4A;
+  background-color: #17A17E;
   padding-top: .8rem;
   padding-bottom: .8rem;
-  color: white;
+  color: #823000;
   display: flex;
   justify-content: center;
   font-size: 1.2rem;
@@ -233,6 +264,7 @@ nav .items {
   margin-top: 2rem;
   font-weight: 500;
   margin-left: 2.5rem;
+  box-shadow: .9rem .9rem .9rem #823000;
 }
 
 .banner.quote h1 {
@@ -250,6 +282,7 @@ nav .items {
   font-size: 1.5rem;
   color: #4A4A4A;
   font-weight: 600;
+  /*text-shadow: .4rem .4rem .4rem #823000;*/
 }
 
 /* Information Section */
@@ -374,7 +407,7 @@ nav .items {
   }
 }
 
-.side.column .mobile.keynote {
+.mobile.side-column {
   display: none;
 }
 
@@ -528,7 +561,7 @@ nav .items {
   }
 
   .mobile.learning a:hover {
-    background-color: teal;
+    background-color: #9E9E9E;
   }
 }
 
