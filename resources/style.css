@@ -161,7 +161,7 @@ nav .items {
 
 @media only screen and (max-width: 470px) {
   .container .mobile.color.box {
-    background-color: #3Feee6;
+    background-color: #5d5c61;
     width: 100%;
     height: 11.25rem;
     display: flex;
@@ -205,8 +205,10 @@ nav .items {
     height: 11.25rem;
   }
 
-.banner.quote a {
+.container .banner.quote a {
   height: 4rem;
+  background-color: #B1a296;
+  margin-top: 1.5rem;
 }
 
 }
@@ -216,7 +218,7 @@ nav .items {
   align-items: center;
   width: 100%;
   flex-direction: row;
-  background-color: #97CAEF;
+  background-color: #7395Ae;
 }
 
 
@@ -253,10 +255,10 @@ nav .items {
 }
 
 .banner.quote a {
-  background-color: #17A17E;
+  background-color: #557a95;
   padding-top: .8rem;
   padding-bottom: .8rem;
-  color: #823000;
+  color: #5d5c61;
   display: flex;
   justify-content: center;
   font-size: 1.2rem;
@@ -264,7 +266,8 @@ nav .items {
   margin-top: 2rem;
   font-weight: 500;
   margin-left: 2.5rem;
-  box-shadow: .9rem .9rem .9rem #823000;
+  box-shadow: .9rem .9rem .9rem #5d5c61;
+  border-radius: .5rem;
 }
 
 .banner.quote h1 {
@@ -318,6 +321,7 @@ nav .items {
     display: flex;
     flex-direction: column;
     margin-right: 1rem;
+    margin-top: 1.5rem;
   }
 
   .mobile.side-column .title a {
