@@ -661,7 +661,7 @@ transition: background-color .2s linear;
   }
 
   .mobile.learning a:visited {
-    background-color: gray;
+    background-color: #5D5C61;
   }
 
   .mobile.learning a {
@@ -669,7 +669,7 @@ transition: background-color .2s linear;
   }
 
   .mobile.learning a:hover {
-    background-color: #9E9E9E;
+    background-color: #7395AE;
   }
 }
 
