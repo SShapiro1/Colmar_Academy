@@ -167,7 +167,7 @@ nav .items {
   .container .mobile.color.box {
     background-color: #5d5c61;
     width: 100%;
-    height: 11.25rem;
+    height: 7.25rem;
     display: flex;
     }
 
@@ -208,21 +208,24 @@ nav .items {
   .container .banner-image {
     width: 100%;
     height: 11.25rem;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .container .banner.quote h1 {
-    width: 100%;
-    font-size: 3rem;
+    width: 95%;
+    font-size: 2.5rem;
     align-items: center;
     justify-content: center;
   }
 
   .container .banner.quote h3 {
     margin-bottom: 1.5rem;
-    width: 100%;
-    font-size: 1.4rem;
+    width: 90%;
+    font-size: 1.6rem;
     align-items: center;
     justify-content: center;
+    font-weight: 600;
   }
 
 .container .banner.quote a {
@@ -365,15 +368,15 @@ transition: background-color .2s linear;
   }
   .mobile.side-column .title a {
     width: 100%;
+    margin-left: -1rem;
   }
 
   .mobile.side-column .title p {
     width: 100%;
-    padding-left: 1rem;
+    color: #5D5C61;
   }
 
   .mobile.side-column .title h3 {
-    padding-left: 1rem;
     width: 100%;
   }
 
@@ -381,6 +384,8 @@ transition: background-color .2s linear;
     display: flex;
     flex-direction: column;
     width: 100%;
+    overflow: hidden;
+    margin-bottom: -2rem;
   }
 
 
@@ -397,6 +402,7 @@ transition: background-color .2s linear;
     width: 100%;
     margin-left: 1rem;
     margin-right: 1rem;
+    margin-top: -2rem;
   }
 
   .mobile.side-column .mobile.keynote {
@@ -429,16 +435,15 @@ transition: background-color .2s linear;
 }
 
   .mobile.side-column .mobile.keynote a {
-  padding-left: 1rem;
   width: 100%;
 }
 
-  .mobile.side-column .mobile.keynote.info {
+  .mobile.side-column .mobile-keynote.info {
   max-width: 100%;
   display: flex;
   padding-top: 1rem;
   margin-bottom: 8rem;
-  padding-left: 1rem;
+  flex-direction: column;
 }
 
   .side.column .title.keynote .info.keynote{
@@ -452,17 +457,11 @@ transition: background-color .2s linear;
   .mobile.side-column .info:hover {
     background-color: #7395AE;
     color: #FFFFFF;
+    margin-left: 1rem;
   }
 
-  .mobile.side-column h3:hover{
-    color: #FFFFFF;
-  }
 
-  .mobile.side-column p:hover {
-    color: #FFFFFF;
-  }
-
-  .mobile.side-column a:hover {
+  .mobile.side-column .info:hover {
     color: #FFFFFF;
   }
 
@@ -470,23 +469,22 @@ transition: background-color .2s linear;
   transition: background-color .2s linear;
   }
 
-   .mobile-keynote.info:hover {
+ .mobile-keynote.info:hover {
     background-color: #7395AE;
     color: #FFFFFF;
   }
 
-
-   .mobile-keynote.info h3:hover{
+   /*.mobile.side-column .mobile-keynote.info h3:hover{
     color: #FFFFFF;
   }
 
-   .mobile-keynote.info p:hover {
+   .mobile.side-column .mobile-keynote.info p:hover {
     color: #FFFFFF;
   }
 
-  .mobile-keynote.info a:hover {
+  .mobile.side-column .mobile-keynote.info a:hover {
     color: #FFFFFF;
-  }
+  }*/
 
 }
 
