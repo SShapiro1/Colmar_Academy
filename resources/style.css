@@ -14,8 +14,9 @@ div {
 }
 
 body {
-  color: #4A4A4A;
+  /*color: #4A4A4A;*/
   max-width: 100%;
+  font-family: Helvetica, sans-serif;
   }
 
 @media only screen and (max-width: 470px) {
@@ -93,16 +94,19 @@ nav a {
   height: 100%;
   align-items: center;
   font-size: 1.2rem;
-
+  padding-right: 1rem;
+  height: 4rem;
 }
 
-nav .color {
-  background-color: #92E0E0;
-  width: 1rem;
-  align-items: stretch;
-  display: flex;
-  margin: 0;
-  height: 4rem;
+nav a:hover {
+transition: background-color .2s linear;
+}
+
+nav a:hover {
+  background-color: #7395AE;
+  background-blend-mode: color-burn;
+  color: #FFFFFF;
+  font-weight: bold;
 }
 
 
@@ -211,6 +215,14 @@ nav .items {
   margin-top: 1.5rem;
 }
 
+.container .banner.quote a:hover {
+transition: background-color .2s linear;
+}
+
+.container .banner.quote a:hover {
+  background-color: #21303B;
+}
+
 }
 
 .main-banner {
@@ -258,13 +270,13 @@ nav .items {
   background-color: #557a95;
   padding-top: .8rem;
   padding-bottom: .8rem;
-  color: #5d5c61;
+  color: #F0F0F0;
   display: flex;
   justify-content: center;
   font-size: 1.2rem;
   width: 80%;
   margin-top: 2rem;
-  font-weight: 500;
+  font-weight: 700;
   margin-left: 2.5rem;
   box-shadow: .9rem .9rem .9rem #5d5c61;
   border-radius: .5rem;
@@ -273,7 +285,7 @@ nav .items {
 .banner.quote h1 {
   font-size: 3rem;
   margin-left: 4rem;
-  color: #4A4A4A;
+  color: #F0F0F0;
   font-weight: 800;
 }
 
@@ -283,10 +295,20 @@ nav .items {
   justify-content: center;
   margin-left: 5rem;
   font-size: 1.5rem;
-  color: #4A4A4A;
+  color: #F0F0F0;
   font-weight: 600;
   /*text-shadow: .4rem .4rem .4rem #823000;*/
 }
+
+.container .banner.quote a:hover {
+transition: background-color .2s linear;
+}
+
+.container .banner.quote a:hover {
+  background-color: #21303B;
+}
+
+/* Banner section ends*/
 
 /* Information Section */
 
@@ -360,14 +382,14 @@ nav .items {
     margin-right: 1rem;
   }
 
-  .mobile.side-column .mobile-keynote img {
+  .mobile.side-column .mobile.keynote img {
     display: flex;
     width: 100%;
     margin-left: 1rem;
     margin-right: 1rem;
   }
 
-  .mobile.side-column .mobile-keynote {
+  .mobile.side-column .mobile.keynote {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -375,30 +397,33 @@ nav .items {
 
   .mobile.side-column .title.keynote {
     background-color: white;
-    width: 27rem;
+    width: 100%;
   }
 
-.mobile.side-column .mobile-keynote h3 {
+  .mobile.side-column .mobile.keynote h3 {
   font-size: 1.5rem;
   font-weight: 600;
   color: #4A4A4A;
   margin-bottom: .5rem;
   width: 27rem;
   padding-left: 1rem;
+  width: 100%;
   }
 
-.mobile.side-column .mobile-keynote p {
+  .mobile.side-column .mobile.keynote p {
   font-size: 1.5;
   color: #A8A8A8;
   width: 27rem;
   padding-left: 1rem;
+  width: 100%;
 }
 
-.mobile.side-column .mobile-keynote a {
+  .mobile.side-column .mobile.keynote a {
   padding-left: 1rem;
+  width: 100%;
 }
 
-.mobile.side-column .mobile-keynote.info {
+  .mobile.side-column .mobile.keynote.info {
   max-width: 100%;
   display: flex;
   padding-top: 1rem;
@@ -409,6 +434,50 @@ nav .items {
   .side.column .title.keynote .info.keynote{
     display: none;
   }
+
+  .mobile.side-column .info:hover {
+  transition: background-color .2s linear;
+  }
+
+  .mobile.side-column .info:hover {
+    background-color: #7395AE;
+    color: #FFFFFF;
+  }
+
+  .mobile.side-column h3:hover{
+    color: #FFFFFF;
+  }
+
+  .mobile.side-column p:hover {
+    color: #FFFFFF;
+  }
+
+  .mobile.side-column a:hover {
+    color: #FFFFFF;
+  }
+
+  .mobile-keynote.info:hover {
+  transition: background-color .2s linear;
+  }
+
+   .mobile-keynote.info:hover {
+    background-color: #7395AE;
+    color: #FFFFFF;
+  }
+
+
+   .mobile-keynote.info h3:hover{
+    color: #FFFFFF;
+  }
+
+   .mobile-keynote.info p:hover {
+    color: #FFFFFF;
+  }
+
+  .mobile-keynote.info a:hover {
+    color: #FFFFFF;
+  }
+
 }
 
 .mobile.side-column {
@@ -448,6 +517,8 @@ nav .items {
 .practice-quote p {
   color: #4A4A4A;
   margin-top: 2rem;
+  font-weight: bold;
+  font-size: 1.2rem;
 }
 
 .information .side.column {
@@ -509,7 +580,30 @@ nav .items {
 .info a {
   margin-top: .5rem;
   width: 100%;
+  padding-left: 1rem;
 }
+
+.side.column .title:hover {
+transition: background-color .2s linear;
+}
+
+.side.column .title:hover {
+  background-color: #7395AE;
+  color: #FFFFFF;
+}
+
+.side.column .title:hover h3 {
+  color: #ffffff;
+}
+
+.side.column .title:hover p {
+  color: #ffffff;
+}
+
+.side.column .title:hover a {
+  color: #ffffff;
+}
+
 
 /*Pracice Container End*/
 
@@ -622,6 +716,31 @@ nav .items {
   padding-bottom: 1.5rem;
   font-size: 1.1rem;
 }
+
+.course:hover {
+transition: background-color .2s linear;
+}
+
+.course:hover {
+  background-color: #7395AE;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+
+.course:hover h2 {
+  color: #ffffff;
+}
+
+.course:hover span {
+  color: #ffffff;
+}
+
+.course:hover p {
+  color: #ffffff;
+}
+
+/* Course Section Ends*/
 
 /*Thesis Section*/
 
@@ -743,6 +862,7 @@ video {
   padding-left: 1rem;
 }
 
+
 .banner.info img {
   width: 12.5rem;
   padding: .5rem;
@@ -760,6 +880,25 @@ video {
   font-size: 1rem;
 }
 
+
+.banner.info:hover {
+transition: background-color .2s linear;
+}
+
+.banner.info:hover {
+  background-color: #7395AE;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+
+.banner.info:hover h2 {
+  color: #ffffff;
+}
+
+.banner.info:hover p {
+  color: #ffffff;
+}
 /*End Thesis Section */
 
 /*Begin Footer Section */
