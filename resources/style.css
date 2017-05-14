@@ -99,7 +99,7 @@ nav a {
 }
 
 nav a:hover {
-transition: background-color .2s linear;
+transition: background-color .1s linear;
 }
 
 nav a:hover {
@@ -366,15 +366,15 @@ transition: background-color .2s linear;
   .information.container .side.column {
     display: none;
   }
+}
 
   .information .mobile.side-column {
-    width: 27rem;
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 1.5rem;
   }
 
-  }
   .mobile.side-column .title a {
     max-width: 100%;
     margin-left: -1rem;
@@ -407,17 +407,19 @@ transition: background-color .2s linear;
   }
 
   .mobile.side-column .mobile.keynote img {
-    display: flex;
-    width: 100%;
     margin-left: 1rem;
     margin-right: 1rem;
     margin-top: -2rem;
+    width: 100%;
+    padding: 0;
+    display: flex;
   }
 
   .mobile.side-column .mobile.keynote {
-    width: 100%;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
+    margin-right: 1rem;
 }
 
   .mobile.side-column .title.keynote {
@@ -430,7 +432,7 @@ transition: background-color .2s linear;
   font-weight: 600;
   color: #4A4A4A;
   margin-bottom: .5rem;
-  width: 27rem;
+  width: 100%;
   padding-left: 1rem;
   width: 100%;
   }
@@ -500,7 +502,6 @@ transition: background-color .2s linear;
     background-color: #7E8891;
   }
 
-}
 
 
 
