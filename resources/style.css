@@ -338,6 +338,10 @@ transition: background-color .2s linear;
   padding-bottom: 4rem;
 }
 
+.mobile.side-column {
+  display: none;
+}
+
 .information .banner.image {
   display: flex;
   flex-direction: column;
@@ -347,6 +351,11 @@ transition: background-color .2s linear;
   padding-left: 1.5rem;
   width: 60%;
   height: 100%;
+}
+
+.side.column .title.keynote .info.keynote{
+  display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (max-width: 470px) {
@@ -367,7 +376,7 @@ transition: background-color .2s linear;
 
   }
   .mobile.side-column .title a {
-    width: 100%;
+    max-width: 100%;
     margin-left: -1rem;
   }
 
@@ -446,11 +455,9 @@ transition: background-color .2s linear;
   flex-direction: column;
 }
 
-  .side.column .title.keynote .info.keynote{
-    display: none;
-  }
 
-  .mobile.side-column .info:hover {
+
+  /*.mobile.side-column .info:hover {
   transition: background-color .2s linear;
   }
 
@@ -463,13 +470,19 @@ transition: background-color .2s linear;
 
   .mobile.side-column .info:hover {
     color: #FFFFFF;
-  }
+  }*/
 
   .mobile-keynote.info:hover {
   transition: background-color .2s linear;
   }
 
- .mobile-keynote.info:hover {
+.mobile.side-column .title .info a:hover {
+  color: #FFFFFF;
+  background-color: #7E8891;
+}
+
+
+ /*.mobile-keynote.info:hover {
     background-color: #7395AE;
     color: #FFFFFF;
   }
@@ -480,17 +493,16 @@ transition: background-color .2s linear;
 
    .mobile.side-column .mobile-keynote.info p:hover {
     color: #FFFFFF;
-  }
+  }*/
 
   .mobile.side-column .mobile-keynote.info a:hover {
     color: #FFFFFF;
-  }*/
+    background-color: #7E8891;
+  }
 
 }
 
-  .mobile.side-column {
-  display: none;
-}
+
 
 
 .information .practicing {
