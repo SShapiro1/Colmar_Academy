@@ -488,9 +488,10 @@ transition: background-color .2s linear;
 
 }
 
-.mobile.side-column {
+  .mobile.side-column {
   display: none;
 }
+
 
 .information .practicing {
   display: flex;
