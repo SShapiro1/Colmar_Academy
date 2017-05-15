@@ -691,12 +691,18 @@ transition: background-color .2s linear;
   width: 100%;
 }
 
+.learning.container .heading h1{
+  color: #4A4A4A;
+  font-weight: bolder;
+  text-shadow: .5rem .5rem .5rem #5d5c61;
+}
+
 .learning.container .heading {
   justify-content: center;
   display: flex;
   padding-top: 2rem;
   padding-bottom: 2rem;
-  background-color: #EAEBEC;
+  background: linear-gradient(#7395AE, #FFFFFF,#7395AE);
 }
 
 @media only screen and (max-width: 470px) {
