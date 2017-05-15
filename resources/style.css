@@ -142,7 +142,7 @@ nav a {
   height: 100%;
   align-items: center;
   font-size: 1.2rem;
-  padding-right: 1rem;
+  margin-right: 1rem;
   height: 4rem;
 }
 
@@ -151,9 +151,10 @@ transition: background-color .1s linear;
 }
 
 nav a:hover {
-  background-color: #7395AE;
+/*  background-color: #7395AE;*/
   color: #FFFFFF;
   font-weight: bold;
+  background: linear-gradient(#FFFFFF, #FFFFFF, #7395AE, #FFFFFF, #FFFFFF);
 }
 
 
@@ -337,7 +338,7 @@ transition: background-color .2s linear;
 .banner.quote a {
   background-color: #557a95;
   padding-top: .8rem;
-  padding-bottom: .5rem;
+  padding-bottom: .8rem;
   color: #F0F0F0;
   display: flex;
   justify-content: center;
