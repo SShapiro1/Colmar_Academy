@@ -1,5 +1,53 @@
+@font-face {
+  font-family: 'Asap';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Asap Regular'), local('Asap-Regular'), url(https://fonts.gstatic.com/s/asap/v5/oiVlPAjaPL0EznW3E5Z2DQ.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Francois One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Francois One Regular'), local('FrancoisOne-Regular'), url(https://fonts.gstatic.com/s/francoisone/v10/bYbkq2nU2TSx4SwFbz5sCOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Antic';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Antic'), local('Antic-Regular'), url(https://fonts.gstatic.com/s/antic/v7/NHsS2_8AsBoNMVvtCA3aYA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v11/0dTEPzkLWceF7z0koJaX1A.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
 ul {
   list-style-type: none;
+}
+
+h3 {
+  font-family: 'Asap', sans-serif;
+}
+
+h1 {
+  font-family: 'Francois One', sans-serif;
+}
+
+p {
+  font-family: 'Antic', sans-serif;
+}
+
+h5 {
+  font-family: 'Raleway', sans-serif;
 }
 
 .heading h1 {
@@ -104,7 +152,6 @@ transition: background-color .1s linear;
 
 nav a:hover {
   background-color: #7395AE;
-  background-blend-mode: color-burn;
   color: #FFFFFF;
   font-weight: bold;
 }
@@ -165,7 +212,7 @@ nav .items {
 
 @media only screen and (max-width: 470px) {
   .container .mobile.color.box {
-    background-color: #5d5c61;
+    background: linear-gradient(white, #7395AE);
     width: 100%;
     height: 7.25rem;
     display: flex;
@@ -374,11 +421,13 @@ transition: background-color .2s linear;
   .mobile.side-column .title a {
     max-width: 100%;
     margin-left: -1rem;
+    padding-left: 1rem;
   }
 
   .mobile.side-column .title p {
     width: 100%;
     color: #5D5C61;
+
   }
 
   .mobile.side-column .title h3 {
@@ -443,6 +492,7 @@ transition: background-color .2s linear;
 
   .mobile.side-column .mobile.keynote a {
   width: 100%;
+  padding-left: 1rem;
 }
 
   .mobile.side-column .mobile-keynote.info {
@@ -597,7 +647,6 @@ transition: background-color .2s linear;
 .info a {
   margin-top: .5rem;
   width: 100%;
-  padding-left: 1rem;
 }
 
 .side.column .title:hover {
@@ -647,7 +696,7 @@ transition: background-color .2s linear;
 @media only screen and (max-width: 470px) {
   .learning.container .heading {
     margin-top: 8rem;
-    border-top: 1px solid green;
+    background: linear-gradient(#7395AE, #FFFFFF);
   }
 }
 
@@ -696,7 +745,7 @@ transition: background-color .2s linear;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #EAEBEC;
+  background: linear-gradient(#7395Ae, white);
   padding-bottom: 2rem;
 }
 
@@ -769,6 +818,7 @@ transition: background-color .2s linear;
 .thesis.container {
   display: block;
   width: 100%;
+
 }
 
 .thesis.container .heading {
@@ -776,6 +826,7 @@ transition: background-color .2s linear;
   display: flex;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  background-color: #FFFFFF;
 }
 
 .thesis.info {
