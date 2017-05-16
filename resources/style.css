@@ -50,6 +50,10 @@ h5 {
   font-family: 'Raleway', sans-serif;
 }
 
+a {
+  font-family: 'Antic', sans-serif;
+}
+
 .heading h1 {
   font-weight: bolder;
   color: #4E4E4E;
@@ -694,7 +698,7 @@ transition: background-color .2s linear;
 .learning.container .heading h1{
   color: #4A4A4A;
   font-weight: bolder;
-  text-shadow: .5rem .5rem .5rem #5d5c61;
+  font-size: 2.5rem;
 }
 
 .learning.container .heading {
@@ -967,7 +971,7 @@ video {
 
 .banner.info p {
   margin-top: .5rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 
